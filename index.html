@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Aprendizagem Interativa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Centro de Aprendizagem Interativa</h1>
+        <p>Aprenda e resolva problemas simples de forma divertida!</p>
+    </header>
+    <main class="container">
+        <section class="container-exercicio">
+            <h2>Cálculo da Média</h2>
+            <p>Digite três números para descobrir a média entre eles.</p>
+            <form class="form" onsubmit="calcularMedia(event)">
+                <input class="input" type="number" id="num1" placeholder="Número 1" required>
+                <input class="input" type="number" id="num2" placeholder="Número 2" required>
+                <input class="input" type="number" id="num3" placeholder="Número 3" required>
+                <button class="btn" type="submit">Calcular Média</button>
+            </form>
+            <div class="result" id="resultadoMedia"></div>
+        </section>
+        <section class="container-exercicio">
+            <h2>Verificação de Idade</h2>
+            <p>Informe sua idade para saber se você é menor ou maior de idade.</p>
+            <form class="form" onsubmit="verificarIdade(event)">
+                <input class="input" type="number" id="idade" placeholder="Informe sua idade" required>
+                <button class="btn" type="submit">Verificar Idade</button>
+            </form>
+            <div class="result" id="resultadoIdade"></div>
+        </section>
+        <section class="container-exercicio">
+            <h2>Determinação do Mês</h2>
+            <p>Digite um número de 1 a 12 para saber o mês correspondente.</p>
+            <form class="form" onsubmit="determinarMes(event)">
+                <input class="input" type="number" id="numeroMes" placeholder="Número do mês (1-12)" required>
+                <button class="btn" type="submit">Determinar Mês</button>
+            </form>
+            <div class="result" id="resultadoMes"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
